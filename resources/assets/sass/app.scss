@@ -1,0 +1,145 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url( 'https://fonts.googleapis.com/css?family=Bree+Serif'); // Variables
+@import url( 'https://fonts.googleapis.com/css?family=Pacifico');
+@import "variables"; // Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$blue: #00378d;
+$yellow: #f1d000;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+body {
+    padding-top: 6em;
+}
+
+.float-center {
+    margin: 0 auto;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p1 {
+    padding: 2em;
+}
+
+.p2 {
+    padding: 2em;
+}
+
+.p3 {
+    padding: 3em;
+}
+
+.m1 {
+    margin: 2em;
+}
+
+.m2 {
+    margin: 2em;
+}
+
+.m3 {
+    margin: 3em;
+}
+
+.mt3 {
+    margin-top: 3em;
+}
+
+.img-small {
+    height: 75px;
+}
+
+.header-text {
+    font-family: 'Pacifico', cursive;
+}
+
+.center-all {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field {
+    padding: 1em;
+    display: block;
+    transition: all 0.4s;
+
+    * {
+        outline: none;
+    }
+
+    &:nth-child(even) {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    &:nth-child(odd) {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .box {
+        text-align: right;
+        float: left;
+    }
+
+    .name {
+        text-align: left;
+        float: left;
+    }
+
+    .date {
+        text-align: right;
+    }
+}
+
+input[type=checkbox] {
+    margin: 6px 10px;
+}
+
+label {
+  font-weight: 400 !important;
+}
+
+.form-group.flex {
+    display: flex;
+
+    input, button {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    
+    button {
+      background: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.error {
+  display: block;
+width: 100%;
+text-align: center;
+text-transform: lowercase;
+background: darkred;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+color: white;
+padding: 6px;
+}
