@@ -37,7 +37,7 @@
           method: "GET",
           url: "/" + id + "/destroy"
         });
-        $(e.target).parents(".field").slideUp("slow", function() {
+        $(e.target).parents(".field").slideUp(300, function() {
           $(e.target).parents(".field").remove();
           $("#add").focus();
         });

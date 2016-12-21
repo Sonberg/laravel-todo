@@ -79,19 +79,13 @@ body {
 .field {
     padding: 1em;
     display: block;
-    transition: all 0.4s;
+    transition: all 0.3s;
+    border-bottom: 1px solid #d8d8d8;
 
     * {
         outline: none;
     }
 
-    &:nth-child(even) {
-        background: rgba(0, 0, 0, 0.05);
-    }
-
-    &:nth-child(odd) {
-        background: rgba(0, 0, 0, 0);
-    }
 
     .box {
         text-align: right;
